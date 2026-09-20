@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto | Hermanos Jota</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hermanos Jota</h1>
+
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="productos.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>
+            <a href="carrito.html">
+                Carrito: <span id="contadorCarrito">0</span>
+            </a>
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Contacto</h2>
+
+            <form id="formContacto">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+            <p id="mensajeExito"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hermanos Jota. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

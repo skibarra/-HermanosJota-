@@ -1,0 +1,129 @@
+Documentación del proyecto
+1. Descripción
+
+El proyecto consiste en el desarrollo de un sitio web para la mueblería familiar Hermanos Jota.
+
+El objetivo es crear una página web funcional utilizando HTML, CSS y JavaScript, incorporando navegación entre páginas, catálogo de productos, carrito de compras y formulario de contacto.
+2. Tecnologías utilizadas
+
+HTML5
+
+Se utilizó HTML5 para crear la estructura de las páginas y organizar el contenido mediante elementos semánticos como:
+
+* header
+* nav
+* main
+* section
+* article
+* footer
+* form
+CSS3
+
+Se utilizó un archivo externo style.css para definir los estilos del sitio.
+
+Se aplicaron:
+
+* Flexbox.
+* Diseño responsive.
+* Márgenes y espacios.
+* Colores.
+* Tipografías.
+* Estilos para botones, formularios y tarjetas.
+* Adaptación a diferentes tamaños de pantalla.
+JavaScript
+
+JavaScript se utilizó para agregar funcionalidad e interacción al sitio.
+
+Se trabajó con:
+
+* Variables.
+* Arrays.
+* Objetos.
+* Funciones.
+* Condicionales.
+* Eventos.
+* Manipulación del DOM.
+* async y await.
+* setTimeout.
+* URLSearchParams.
+* localStorage.
+3. Estructura de archivos
+
+text
+HermanosJota/
+├── index.html
+├── productos.html
+├── producto.html
+├── contacto.html
+├── carrito.html
+├── style.css
+├── script.js
+├── logo.svg
+├── README.md
+└── DOCUMENTACION.md
+
+4. Funcionamiento del catálogo
+
+Los productos se encuentran almacenados en un array de objetos dentro de script.js.
+
+Cada producto contiene:
+
+* Nombre.
+* Precio.
+* Descripción.
+* Imagen.
+
+JavaScript utiliza estos datos para generar dinámicamente los productos dentro de `productos.html`.
+5. Detalle del producto
+
+Al seleccionar un producto se envía su identificador mediante la URL.
+
+Ejemplo:
+text
+producto.html id=0
+
+
+JavaScript obtiene este valor utilizando URLSearchParams y muestra la información correspondiente.
+
+6. Buscador
+
+El catálogo cuenta con un campo de búsqueda.
+
+Al ingresar texto, JavaScript filtra el array de productos y muestra los resultados que coinciden con el nombre del producto.
+
+7. Carrito
+
+El carrito permite agregar productos, eliminarlos y calcular el total.
+
+Los productos seleccionados se almacenan utilizando "localStorage", permitiendo conservar el contenido del carrito al cambiar entre las diferentes páginas.
+
+También se muestra un contador con la cantidad de productos agregados.
+
+8. Formulario de contacto
+
+El formulario solicita:
+
+* Nombre.
+* Email.
+* Mensaje.
+
+JavaScript verifica que los campos estén completos y que el email tenga un formato válido.
+
+Luego se muestra un mensaje mediante el DOM.
+9. Compra simulada
+
+La función de finalizar compra simula el proceso de compra.
+
+Cuando existen productos en el carrito, se muestra un mensaje de confirmación y se eliminan los productos almacenados.
+
+No se realiza ningún pago real.
+10. Diseño responsive
+
+El sitio fue desarrollado utilizando un enfoque responsive para permitir su visualización en diferentes tamaños de pantalla.
+
+Se utiliza Flexbox para organizar los principales elementos de la interfaz.
+11. Publicación
+
+El proyecto fue versionado utilizando Git y almacenado en GitHub.
+
+La página puede ser publicada mediante GitHub Pages.

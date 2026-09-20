@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Hermanos Jota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Hermanos Jota</h1>
+
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="productos.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <p>
+            <a href="carrito.html">Carrito: <span id="contadorCarrito">0</span></a>
+        </p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Mi carrito</h2>
+
+            <div id="listaCarrito"></div>
+
+            <p>Total: $<span id="totalCarrito">0</span></p>
+
+            <button id="vaciarCarrito">Vaciar carrito</button>
+            <button id="finalizarCompra">Finalizar compra</button>
+            <p id="mensajeCompra"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Hermanos Jota. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
